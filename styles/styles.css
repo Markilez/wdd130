@@ -1,4 +1,4 @@
-nav{
+nav {
     background-color: darkblue; 
     padding: 10px;
 }
@@ -18,5 +18,5 @@ img {
     box-shadow: 0 0 30px gray;
 }
 p {
-    padding: 1opx
+    padding: 10px; /* Fixed typo here */
 }
