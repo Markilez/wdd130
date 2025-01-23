@@ -2,14 +2,17 @@ nav {
     background-color: darkblue; 
     padding: 10px;
 }
+
 nav a {
     color: white;
     display: block;
     padding: 20px;
 }
+
 h1 {
     color: darkblue;
 }
+
 img {
     width: 150px;
     height: auto;
@@ -17,6 +20,39 @@ img {
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
+
 p {
     padding: 10px; 
+}
+
+/* Main Rule */
+main {
+    max-width: 1200px; /* Set a max-width value that suits your design */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Aside Rule */
+aside {
+    background-color: lightgray; /* Example background color */
+    padding: 10px; /* Add padding for visual spacing */
+}
+
+/* Aside Image Rule */
+aside img {
+    width: 100%; /* Make the image responsive within the aside */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+/* Paragraph Rule */
+p {
+    padding: 0; /* Remove padding as per the requirement */
+}
+
+/* Footer Rule */
+footer {
+    background-color: darkblue; /* Background color for the footer */
+    color: white; /* Text color for better contrast */
+    padding: 15px; /* Add padding for spacing */
+    text-align: center; /* Center the text */
 }
