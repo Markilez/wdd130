@@ -21,8 +21,8 @@ body {
 header {
     background-color: var(--primary-color);
     padding: 1em;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 1fr; /* Logo and Navigation */
     align-items: center;
 }
 
@@ -31,16 +31,15 @@ header img {
     margin: 0;
 }
 
-header nav {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+nav {
+    display: flex; /* Use Flexbox for navigation */
+    justify-content: flex-end; /* Aligns the items to the right */
 }
 
 header nav a {
     color: #FFFFFF;
     text-decoration: none;
-    margin-right: 1em; /* Directly added to links instead of <li> */
+    margin: 0 1em; /* Add horizontal margin */
 }
 
 nav a:hover {
@@ -88,8 +87,8 @@ article img {
 }
 
 section {
-    background-color: var(--primary-color);
-    padding: 1em 0;
+    margin-top: 20px; /* Add margin to separate sections */
+    padding: 1em; /* Padding for sections */
 }
 
 h2 {
@@ -98,9 +97,21 @@ h2 {
     font-size: var(--font-size-medium);
 }
 
+.adventures-gallery {
+    display: flex; /* Flexbox for horizontal layout */
+    flex-wrap: wrap; /* Allow wrapping to new lines */
+    justify-content: space-between; /* Space between images */
+}
+
+.adventures-gallery figure {
+    flex: 1 1 calc(20% - 10px); /* Responsive images */
+    margin: 5px; /* Margin for spacing */
+    text-align: center;
+}
+
 .social-media-icons {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end; /* Align icons to the end */
     list-style: none;
     margin: 0; 
     padding: 0; 
@@ -108,7 +119,7 @@ h2 {
 
 .social-media-icons img {
     width: 20px;
-    margin: 0 5px;
+    margin-left: 10px; /* Space between icons */
 }
 
 footer {
@@ -116,6 +127,9 @@ footer {
     padding: 1em;
     background-color: var(--primary-color);
     color: white;
+    display: flex; /* Flexbox for footer layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center;
 }
 
 img {
