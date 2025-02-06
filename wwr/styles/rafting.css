@@ -136,3 +136,52 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+/* New Styles for Contact Page */
+
+form {
+    background-color: rgba(255, 255, 255, 0.8); /* Lighter background for form */
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+    display: block; 
+    font-weight: bold; 
+    margin: 10px 0 5px; /* Space above each label */
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px; 
+    margin-bottom: 10px; /* Space below input fields */
+    border: 1px solid var(--accent1-color);
+    border-radius: 5px;
+}
+
+form button {
+    background-color: var(--accent2-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: var(--font-size-medium);
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--primary-color); /* Change color on hover */
+}
+
+.team {
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: space-between; /* Space between team members */
+    flex-wrap: wrap; /* Allow wrapping to new lines */
+}
+
+.team figure {
+    flex: 1 1 30%; /* Responsive team member cards */
+    margin: 10px; /* Margin for spacing */
+    text-align: center;
+}
