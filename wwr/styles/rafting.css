@@ -43,7 +43,7 @@ header nav a {
 }
 
 nav a:hover {
-    color: var(--accent2-color);
+    color: var(--accent2-color); /* Hover color */
 }
 
 main {
@@ -54,7 +54,7 @@ main {
 }
 
 .hero {
-    background-image: url('images/hero-image.jpg');
+    background-image: url('images/hero-image.jpg'); /* Ensure this path is correct */
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -161,6 +161,11 @@ form textarea {
     border-radius: 5px;
 }
 
+form input:invalid,
+form textarea:invalid {
+    border-color: red; /* Invalid input indication */
+}
+
 form button {
     background-color: var(--accent2-color);
     color: white;
@@ -184,4 +189,12 @@ form button:hover {
     flex: 1 1 30%; /* Responsive team member cards */
     margin: 10px; /* Margin for spacing */
     text-align: center;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 600px) {
+    .adventures-gallery figure,
+    .team figure {
+        flex: 1 1 100%; /* Stack items on smaller screens */
+    }
 }
