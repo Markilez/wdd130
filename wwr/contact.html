@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | White Water Rafting</title>
     <meta name="description" content="Get in touch with White Water Rafting Company for inquiries about our adventures, reservations, or website suggestions.">
     <meta name="author" content="Maclarence Makomo">
-
+    
+    <!-- Open Graph and Twitter Card meta tags for better social media sharing -->
+    <meta property="og:title" content="White Water Rafting - Contact Us">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://whitewaterrafting.com/contact">
+    <meta property="og:image" content="https://whitewaterrafting.com/images/hero-image.jpg">
+    
     <!-- Preconnect to Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,28 +20,34 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     
+    <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
-
+    <!-- Header Section -->
     <header>
         <img src="images/logo.png" alt="WWR Logo" id="site-logo">
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
+    <!-- Main Content -->
     <main>
-        <div class="hero">
+        <!-- Hero Section -->
+        <section class="hero">
             <img src="images/hero-image.jpg" alt="White Water Rafting Adventure" class="hero-image">
             <h1>Contact Us</h1>
-        </div>
+        </section>
 
-        <section>
+        <!-- Contact Information Section -->
+        <section class="contact-info">
             <h2>Contact Information</h2>
             <address>
                 <p><strong>Address:</strong> 8817 100th Crescent, Glenview 8, Harare</p>
@@ -44,39 +55,42 @@
                 <p><strong>Email:</strong> <a href="mailto:info@whitewaterrafting.com">info@whitewaterrafting.com</a></p>
             </address>
             
-            <h2>Find Us Here</h2>
+            <!-- Google Maps Embed -->
             <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.3297999967883!2d-122.41941568468145!3d37.77492927975965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085817cf9a6fe07%3A0x4b6692b9648d7e7b!2sWhite%20Water%20Rafting%20Company!5e0!3m2!1sen!2sus!4v1623034006261!5m2!1sen!2sus" 
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </section>
 
-        <section>
+        <!-- Meet Our Team Section -->
+        <section class="meet-team">
             <h2>Meet Our Team</h2>
             <div class="team">
                 <figure>
-                    <img src="images/team-member1.jpg" alt="Team Member 1" width="100">
+                    <img src="images/team-member1.jpg" alt="John Doe, a river rafting guide at White Water Rafting" width="100">
                     <figcaption>John Doe - Guide</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/team-member2.jpg" alt="Team Member 2" width="100">
+                    <img src="images/team-member2.jpg" alt="James Smith, an instructor at White Water Rafting" width="100">
                     <figcaption>James Smith - Instructor</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/team-member3.jpg" alt="Team Member 3" width="100">
+                    <img src="images/team-member3.jpg" alt="Emily Johnson, a safety officer at White Water Rafting" width="100">
                     <figcaption>Emily Johnson - Safety Officer</figcaption>
                 </figure>
             </div>
         </section>
 
-        <section>
+        <!-- Contact Form Section -->
+        <section class="contact-form">
             <h2>Contact Us Form</h2>
-            <form action="submit_form.php" method="post">
+            <form action="#" method="post">
                 <label for="name">Enter Your Name Here:</label>
                 <input type="text" id="name" name="name" required>
 
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
 
+                <!-- Radio Buttons for Form Purpose -->
                 <fieldset>
                     <legend>Purpose of Message:</legend>
                     <label>
@@ -90,27 +104,22 @@
                     </label>
                 </fieldset>
 
+                <!-- Textarea for Message -->
                 <label for="message">Your Message:</label>
                 <textarea id="message" name="message" required></textarea>
 
-                <label>
-                    <input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter
-                </label>
-
-                <button type="submit">Send Message</button>
+                <!-- Submit Button -->
+                <button type="submit">Submit</button>
             </form>
         </section>
+
+        <!-- Include JavaScript File -->
+        <script src="scripts/script.js"></script>
     </main>
 
+    <!-- Footer Section -->
     <footer>
-        <p>© 2023 White Water Rafting Company - Maclarence Makomo</p>
-        <p>@whitewater</p>
-        <div class="social-media-icons">
-            <a href="https://facebook.com" target="_blank"><img src="images/facebook-icon.png" alt="Facebook"></a>
-            <a href="https://twitter.com" target="_blank"><img src="images/twitter-icon.svg" alt="Twitter"></a>
-            <a href="https://instagram.com" target="_blank"><img src="images/instagram-icon.svg" alt="Instagram"></a>
-        </div>
-        <p><a href="link_to_your_wireframe_image" target="_blank">View Contact Us Wireframe</a></p>
+        &copy; 2023 White Water Rafting. All rights reserved.
     </footer>
 
 </body>
