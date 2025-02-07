@@ -1,10 +1,11 @@
+<!-- Modified Meta Tags -->
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | White Water Rafting</title>
-    <meta name="description" content="Contact White Water Rafting for inquiries about our adventures, reservations, or suggestions.">
+    <meta name="description" content="Get in touch with White Water Rafting for information about our rafting adventures, making reservations, or providing feedback.">
     <meta name="author" content="Maclarence Makomo">
     
     <!-- Open Graph and Twitter Card meta tags for better social media sharing -->
@@ -24,6 +25,7 @@
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
+<!-- Modified Body Content -->
 <body>
     <!-- Header Section -->
     <header>
@@ -56,9 +58,11 @@
             </address>
             
             <!-- Google Maps Embed -->
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.3297999967883!2d-122.41941568468145!3d37.77492927975965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085817cf9a6fe07%3A0x4b6692b9648d7e7b!2sWhite%20Water%20Rafting%20Company!5e0!3m2!1sen!2sus!4v1623034006261!5m2!1sen!2sus" 
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.3297999967883!2d-122.41941568468145!3d37.77492927975965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085817cf9a6fe07%3A0x4b6692b9648d7e7b!2sWhite%20Water%20Rafting%20Company!5e0!3m2!1sen!2sus!4v1623034006261!5m2!1sen!2sus" 
+                    width="600" height="450" allowfullscreen="" loading="lazy"></iframe>
+            </div>
         </section>
 
         <!-- Meet Our Team Section -->
@@ -79,11 +83,11 @@
                 </figure>
                 <figure>
                     <img src="images/team-member4.jpg" alt="Alice Brown, a tour coordinator at White Water Rafting" width="100">
-                    <figcaption>Richman Brown - Tour Coordinator</figcaption>
+                    <figcaption>Alice Brown - Tour Coordinator</figcaption>
                 </figure>
                 <figure>
                     <img src="images/team-member5.jpg" alt="Mark Wilson, an equipment manager at White Water Rafting" width="100">
-                    <figcaption>Florence Wilson - Equipment Manager</figcaption>
+                    <figcaption>Mark Wilson - Equipment Manager</figcaption>
                 </figure>
             </div>
         </section>
@@ -110,6 +114,11 @@
                     <label>
                         <input type="radio" name="purpose" value="website suggestion" id="website-suggestion"> Website Suggestion
                     </label>
+                    <div>
+                        <label>
+                            <input type="checkbox" name="agree" value="agree" required> I agree to White Water Rafting's <a href="#">terms and conditions</a>.
+                        </label>
+                    </div>
                 </fieldset>
 
                 <!-- Textarea for Message -->

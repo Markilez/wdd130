@@ -137,6 +137,17 @@ img {
     height: auto;
 }
 
+.map-container {
+    max-width: 100%; /* Ensures responsiveness */
+    overflow: hidden; /* Prevents overflow */
+}
+
+.map-container iframe {
+    width: 100%; /* Makes the iframe full width */
+    height: 450px; /* Sets iframe height */
+    border: 0; /* Removes default border */
+}
+
 /* New Styles for Contact Page */
 
 form {
@@ -172,6 +183,25 @@ form button {
 
 form button:hover {
     background-color: var(--primary-color); /* Change color on hover */
+}
+
+/* Checkbox Styles */
+input[type="checkbox"] {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+input[type="checkbox"]::before {
+    content: "\2610"; /* Unchecked state */
+    width: 1em;
+    height: 1em;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+input[type="checkbox"]:checked::before {
+    content: "\2614"; /* Checked state */
+    color: blue;
 }
 
 .team {
