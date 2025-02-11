@@ -14,7 +14,7 @@ body {
     background-color: var(--secondary-color);
     color: var(--primary-color);
     display: flex;
-    flex-direction: column;
+    flex-direction: align-justify;
     min-height: 100vh;
 }
 
