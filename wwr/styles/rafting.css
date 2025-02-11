@@ -18,7 +18,12 @@ body {
     min-height: 100vh;
 }
 
-header {
+.header, .footer, .grid {
+    margin: 0 auto;
+    max-width: 840px;
+}
+
+.header {
     background-color: var(--primary-color);
     padding: 1em;
     display: grid;
@@ -26,7 +31,7 @@ header {
     align-items: center;
 }
 
-header img {
+.header img {
     width: 15rem;
     margin: 0;
 }
@@ -36,7 +41,7 @@ nav {
     justify-content: flex-end; /* Aligns the items to the right */
 }
 
-header nav a {
+.header nav a {
     color: #FFFFFF;
     text-decoration: none;
     margin: 0 1em; /* Add horizontal margin */
@@ -141,7 +146,7 @@ h2 {
     margin-left: 10px; /* Space between icons */
 }
 
-footer {
+.footer {
     text-align: center;
     padding: 1em;
     background-color: var(--primary-color);
@@ -251,7 +256,13 @@ input[type="checkbox"]:checked::before {
         font-size: 1.8em; /* Decrease font size for small screens */
     }
 
-    header img {
+    .header img {
         width: 5rem; /* Smaller logo for mobile */
     }
+}
+
+/* Aside Errors Corrected */
+aside {
+    position: relative;
+    /* Additional properties can be added based on your design needs */
 }
